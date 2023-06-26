@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Multi Step Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-part">
+        <div class="step">
+          <div class="step-infos">
+            <p>STEP 1</p>
+            <h4>YOUR INFO</h4>
+          </div>
+          <div class="step-num num-active">
+            <h4>1</h4>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-infos">
+            <p>STEP 2</p>
+            <h4>SELECT PLAN</h4>
+          </div>
+          <div class="step-num">
+            <h4>2</h4>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-infos">
+            <p>STEP 3</p>
+            <h4>ADD-ONS</h4>
+          </div>
+          <div class="step-num">
+            <h4>3</h4>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-infos">
+            <p>STEP 4</p>
+            <h4>SUMMARY</h4>
+          </div>
+          <div class="step-num">
+            <h4>4</h4>
+          </div>
+        </div>
+      </div>
+      <div class="right-part1 current">
+        <div class="infos">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <form action="" class="step1-form">
+          <div id="name">
+            <label for="">Name</label>
+            <input type="text" placeholder="e.g. Stephen King" data-name />
+          </div>
+          <div id="email">
+            <label for="">Email Address</label>
+            <input
+              type="text"
+              placeholder="e.g. stephenking@lorem.com"
+              data-email
+            />
+          </div>
+          <div id="phone">
+            <label for="">Phone Number</label>
+            <input type="text" placeholder="e.g. +1 234 567 890" data-phone />
+          </div>
+        </form>
+      </div>
+      <div class="right-part2 hide">
+        <div class="infos">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+        </div>
+        <div class="plans">
+          <div class="plan">
+            <img src="./images/icon-arcade.svg" alt="" />
+            <div class="plan-infos">
+              <p>Arcade</p>
+              <p>$9/mo</p>
+            </div>
+          </div>
+          <div class="plan">
+            <img src="./images/icon-advanced.svg" alt="" />
+            <div class="plan-infos">
+              <p>Advanced</p>
+              <p>$12/mo</p>
+            </div>
+          </div>
+          <div class="plan">
+            <img src="./images/icon-pro.svg" alt="" />
+            <div class="plan-infos">
+              <p>Pro</p>
+              <p>$15/mo</p>
+            </div>
+          </div>
+        </div>
+        <div class="plan-switch">
+          <p class="bold">Monthly</p>
+          <div class="circle-container"><div class="circle"></div></div>
+          <p>Yearly</p>
+        </div>
+      </div>
+      <div class="right-part3 hide">
+        <div class="infos">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div class="add-ons">
+          <div class="add">
+            <div class="check-mark">
+              <i class="uil uil-check"></i>
+            </div>
+            <div class="add-infos">
+              <p>Online service</p>
+              <p>Access to multiplayer games</p>
+            </div>
+            <p class="price">+$1/mo</p>
+          </div>
+          <div class="add">
+            <div class="check-mark">
+              <i class="uil uil-check"></i>
+            </div>
+            <div class="add-infos">
+              <p>Larger storage</p>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+            <p class="price">+$2/mo</p>
+          </div>
+          <div class="add">
+            <div class="check-mark">
+              <i class="uil uil-check"></i>
+            </div>
+            <div class="add-infos">
+              <p>Customizable profile</p>
+              <p>Custom theme on your profile</p>
+            </div>
+            <p class="price">+$2/mo</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-part4 hide">
+        <div class="infos">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+        <div class="checking"></div>
+      </div>
+      <div class="right-part5 hide">
+        <div class="summary-container">
+          <img src="./images/icon-thank-you.svg" alt="" />
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </div>
+      </div>
+      <button class="next-btn">Next Step</button>
+      <button class="back-btn hide-back-btn">Go Back</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
